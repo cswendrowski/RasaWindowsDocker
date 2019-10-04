@@ -1,0 +1,9 @@
+FROM python:3.7.4-windowsservercore-1809
+
+WORKDIR /app
+
+RUN pip install rasa_nlu[tensorflow]
+
+EXPOSE 5000
+
+CMD ["python", "-m", "rasa_nlu.server", "--path", ".", "-e", "luis"]
