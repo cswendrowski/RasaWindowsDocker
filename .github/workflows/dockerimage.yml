@@ -16,6 +16,6 @@ jobs:
       with:
         USERNAME: ${{ secrets.DOCKER_USERNAME }}
         PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        IMAGE_NAME: 'test-docker-action'
+        IMAGE_NAME: 'rasatensorflowluis'
         DOCKERFILE_PATH: 'RasaTensorflowLuis'
         BUILD_CONTEXT: '.'
